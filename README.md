@@ -1,5 +1,3 @@
-Ниже — версия README, которую я бы использовал как основу реального quant-research проекта: без маркетинговых формулировок, с чётким разделением **signal predictability → latency → execution → economic significance**.
-
  # HFT Signal Decay & Execution Economics in BTC/USDT Perpetuals
 
  ## 1\. Research Objective
