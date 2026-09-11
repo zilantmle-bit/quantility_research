@@ -439,18 +439,17 @@ $$
 
  For a buy:
 
- $$
-P_{exec}
-=
-VWAP(\text{ask liquidity consumed})
+```markdown
+For a **buy**:
+
+$$
+P_{\mathrm{exec}} = \mathrm{VWAP}(\text{ask liquidity consumed})
 $$
 
- For a sell:
+For a **sell**:
 
- $$
-P_{exec}
-=
-VWAP(\text{bid liquidity consumed})
+$$
+P_{\mathrm{exec}} = \mathrm{VWAP}(\text{bid liquidity consumed})
 $$
 
  This produces implementation shortfall rather than an artificially optimistic fill.
