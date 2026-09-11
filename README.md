@@ -700,42 +700,43 @@ normal / stressed market
 
 ---
 
- # 21\. Economic Model
+# 21. Economic Model
 
- Net economic edge must include:
+Net economic edge must include:
 
- $$
-NetEdge =
-GrossMarkout
--
-SpreadCost
--
-Fees
--
-Slippage
--
-MarketImpact
--
-LatencyCost
 $$
-
- For maker strategies, replace spread-crossing cost with:
-
- $$
-NetEdge_{maker}
+\mathrm{NetEdge}
 =
-ExpectedMarkout
-+
-MakerRebate
+\mathrm{GrossMarkout}
 -
-AdverseSelection
+\mathrm{SpreadCost}
 -
-ExecutionCosts
+\mathrm{Fees}
+-
+\mathrm{Slippage}
+-
+\mathrm{MarketImpact}
+-
+\mathrm{LatencyCost}
 $$
 
- where execution costs include partial-fill and inventory effects where relevant.
+For maker strategies, replace spread-crossing cost with:
 
- Funding should be included whenever the holding period makes it economically material.
+$$
+\mathrm{NetEdge}_{\mathrm{maker}}
+=
+\mathrm{ExpectedMarkout}
++
+\mathrm{MakerRebate}
+-
+\mathrm{AdverseSelection}
+-
+\mathrm{ExecutionCosts}
+$$
+
+where execution costs include partial-fill and inventory effects where relevant.
+
+Funding should be included whenever the holding period makes it economically material.
 
 ---
 
