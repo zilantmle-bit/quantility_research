@@ -437,7 +437,6 @@ $$
 
  The execution price must therefore be derived from the reconstructed order book rather than from mid-price.
 
-```markdown
 For a **buy**:
 
 $$
@@ -448,10 +447,10 @@ For a **sell**:
 
 $$
 P_{\mathrm{exec}} = \mathrm{VWAP}(\text{bid liquidity consumed})
+$$
 
+This produces implementation shortfall rather than an artificially optimistic fill.
 
- This produces implementation shortfall rather than an artificially optimistic fill.
-```
 ---
 
  # 12\. Maker Execution Model
