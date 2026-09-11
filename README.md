@@ -704,35 +704,11 @@ normal / stressed market
 
 Net economic edge must include:
 
-$$
-\mathrm{NetEdge}
-=
-\mathrm{GrossMarkout}
--
-\mathrm{SpreadCost}
--
-\mathrm{Fees}
--
-\mathrm{Slippage}
--
-\mathrm{MarketImpact}
--
-\mathrm{LatencyCost}
-$$
+$$\mathrm{NetEdge} = \mathrm{GrossMarkout} - \mathrm{SpreadCost} - \mathrm{Fees} - \mathrm{Slippage} - \mathrm{MarketImpact} - \mathrm{LatencyCost}$$
 
 For maker strategies, replace spread-crossing cost with:
 
-$$
-\mathrm{NetEdge}_{\mathrm{maker}}
-=
-\mathrm{ExpectedMarkout}
-+
-\mathrm{MakerRebate}
--
-\mathrm{AdverseSelection}
--
-\mathrm{ExecutionCosts}
-$$
+$$\mathrm{NetEdge}_{\mathrm{maker}} = \mathrm{ExpectedMarkout} + \mathrm{MakerRebate} - \mathrm{AdverseSelection} - \mathrm{ExecutionCosts}$$
 
 where execution costs include partial-fill and inventory effects where relevant.
 
